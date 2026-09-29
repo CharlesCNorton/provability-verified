@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 9 of 11. Code patterns and the substitution rows of a code.       *)
+(*     Part 9 of 12. Code patterns and the substitution rows of a code.       *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

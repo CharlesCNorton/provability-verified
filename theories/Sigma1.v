@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 11 of 11. Provable Sigma_1-completeness and the third condition.  *)
+(*     Part 11 of 12. Provable Sigma_1-completeness and the third condition.  *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 6 of 11. Merging two checked derivations and their tables.        *)
+(*     Part 6 of 12. Merging two checked derivations and their tables.        *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 3 of 11. N-satisfaction, the arithmetized checker, HBL, FOembed.  *)
+(*     Part 3 of 12. N-satisfaction, the arithmetized checker, HBL, FOembed.  *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

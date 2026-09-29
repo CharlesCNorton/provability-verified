@@ -2,14 +2,14 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Entry point, re-exporting the eleven parts.                            *)
+(*     Entry point, re-exporting the twelve parts.                            *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)
 (*                                                                            *)
 (******************************************************************************)
 
-(** The development is eleven parts, each depending only on those before
+(** The development is twelve parts, each depending only on those before
     it:
 
       Modal         the modal language and the polymodal calculus GLP*,
@@ -42,8 +42,12 @@
                     Sigma_1-completeness with the formalized numeral
                     substitution, its standard-model meaning, and the
                     third derivability condition FOHBL3_internal
+      Diagonal      closed rows of the substitution tables inverted inside
+                    T_0: closed pairing, the step clause of a row with a
+                    known tag, lookups as rows, and the substitution step
+                    at a closed binary code
 
-    Requiring [Provability.Provability] loads and imports all eleven. *)
+    Requiring [Provability.Provability] loads and imports all twelve. *)
 
 From Provability Require Export Modal.
 From Provability Require Export Syntax.
@@ -56,3 +60,4 @@ From Provability Require Export Rows.
 From Provability Require Export Patterns.
 From Provability Require Export Instances.
 From Provability Require Export Sigma1.
+From Provability Require Export Diagonal.

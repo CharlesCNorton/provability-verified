@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 10 of 11. Provable instances, numeral codes, sums and products.   *)
+(*     Part 10 of 12. Provable instances, numeral codes, sums and products.   *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

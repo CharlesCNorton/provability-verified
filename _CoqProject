@@ -11,4 +11,5 @@ theories/Rows.v
 theories/Patterns.v
 theories/Instances.v
 theories/Sigma1.v
+theories/Diagonal.v
 theories/Provability.v

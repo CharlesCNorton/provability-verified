@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 7 of 11. The second derivability condition inside T_0.            *)
+(*     Part 7 of 12. The second derivability condition inside T_0.            *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

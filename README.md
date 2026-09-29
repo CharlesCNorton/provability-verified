@@ -60,7 +60,7 @@ depends on `classic` alone.
 
 ## Layout
 
-`theories/` holds eleven parts, each depending only on those before it,
+`theories/` holds twelve parts, each depending only on those before it,
 and the entry point `Provability.v`, which re-exports them under the
 logical name `Provability`.
 
@@ -77,6 +77,7 @@ logical name `Provability`.
 | `Patterns.v` | code patterns with slots for numeral codes, and the substitution, occurrence and capture rows of a code |
 | `Instances.v` | provable instances of a pattern with modus ponens, instantiation, existential elimination and case splitting; numeral codes; evaluation, sums, products and disequality inside the provability predicate |
 | `Sigma1.v` | the Δ₀ and Σ₁ inductions, the sentence form, `FOHBL3_internal`, the numeral-substitution formula `FOSUBNUMS` with its derivation, totality and meaning, `provable_sigma1_completeness` |
+| `Diagonal.v` | closed rows of the substitution tables inverted inside T_0: closed pairing, the step clause of a row with a known tag, lookups as rows, the substitution step at a closed binary code |
 
 ## Origin
 

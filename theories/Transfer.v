@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 5 of 11. Substitution and transfer through the checker builders.  *)
+(*     Part 5 of 12. Substitution and transfer through the checker builders.  *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

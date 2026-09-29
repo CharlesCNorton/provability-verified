@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 4 of 11. Object-level arithmetic, beta sequences, Cantor pairing. *)
+(*     Part 4 of 12. Object-level arithmetic, beta sequences, Cantor pairing. *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

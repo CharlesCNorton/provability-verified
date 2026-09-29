@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 1 of 11. Modal language, GLP*, semantics, fixed points, worms.    *)
+(*     Part 1 of 12. Modal language, GLP*, semantics, fixed points, worms.    *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

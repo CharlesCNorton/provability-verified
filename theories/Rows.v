@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 8 of 11. Table rows and one-line derivations inside T_0.          *)
+(*     Part 8 of 12. Table rows and one-line derivations inside T_0.          *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)

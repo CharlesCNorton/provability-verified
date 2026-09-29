@@ -2,7 +2,7 @@
 (*                                                                            *)
 (*                            Provability Verified                            *)
 (*                                                                            *)
-(*     Part 2 of 11. First-order syntax, Goedel coding, the FOProvesTn tower. *)
+(*     Part 2 of 12. First-order syntax, Goedel coding, the FOProvesTn tower. *)
 (*                                                                            *)
 (*     Author: Charles C. Norton                                              *)
 (*     License: MIT                                                           *)
