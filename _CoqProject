@@ -1,0 +1,14 @@
+-Q . Provability
+
+Calculus.v
+ArithSyntax.v
+ArithSemantics.v
+ArithInternal.v
+ArithTransfer.v
+ArithMerge.v
+ArithDerivability.v
+ArithRows.v
+ArithPatterns.v
+ArithInstances.v
+ArithSigma1.v
+Provability.v
