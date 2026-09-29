@@ -144,7 +144,9 @@ as hypotheses \cite{PopescuTraytel2019}.
 
 This paper describes a complete machine-checked proof of \eqref{eq:main}
 for every level of the arithmetic reflection tower of the
-\rocq{tiling-verified} development \cite{TilingVerified}.  Our main
+\rocq{provability-verified} development \cite{ProvabilityVerified},
+the arithmetic layer of the \rocq{tiling-verified} formalization of the
+polymodal provability calculus GLP* \cite{TilingVerified}.  Our main
 results are the following, stated precisely in \cref{sec:statement}.
 \begin{enumerate}
   \item \emph{Provable $\Sigma_1$-completeness with free variables}
@@ -845,13 +847,15 @@ truth of $\Prv_k$ at that witness.
 
 \subsection{Files and checking}
 
-The work adds four files to the \rocq{tiling-verified} development
-\cite{TilingVerified}, placed after the files that define the syntax,
-the semantics, the proof checker and the internal second derivability
-condition (\cref{tab:files}).  The whole development is checked by
-\verb|make| followed by \verb|rocqchk -silent -Q . Tiling Tiling.Tiling|
-with Rocq~9.0, which is what the repository's continuous integration
-runs.  \verb|Print Assumptions provable_sigma1_completeness| reports the
+The work consists of the last four files of the
+\rocq{provability-verified} development \cite{ProvabilityVerified},
+placed after the files that define the syntax, the semantics, the proof
+checker and the internal second derivability condition
+(\cref{tab:files}).  The whole development is checked by \verb|make|
+followed by
+\verb|rocqchk -silent -Q . Provability Provability.Provability| with
+Rocq~9.0, which is what the repository's continuous integration runs;
+the results of this paper are those of commit \texttt{532267a}.  \verb|Print Assumptions provable_sigma1_completeness| reports the
 single axiom \rocq{Classical\_Prop.classic}.
 
 \begin{table}[t]
@@ -1070,6 +1074,12 @@ C.~Smory{\'n}ski.
 S.~{\'S}wierczkowski.
 \newblock Finite sets and {G}{\"o}del's incompleteness theorems.
 \newblock \emph{Dissertationes Mathematicae}, 422:1--58, 2003.
+
+\bibitem{ProvabilityVerified}
+C.~C. Norton.
+\newblock provability-verified: provability in arithmetic, machine-checked in
+  {R}ocq.
+\newblock \url{https://github.com/CharlesCNorton/provability-verified}, 2026.
 
 \bibitem{TilingVerified}
 C.~C. Norton.
