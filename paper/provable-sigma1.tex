@@ -918,14 +918,22 @@ in Coq.  Neither needs the derivability conditions.  Paulson
 in Isabelle/HOL for the theory of hereditarily finite sets, following
 {\'S}wierczkowski \cite{Swierczkowski2003}.  His proof of the second
 theorem establishes the derivability conditions for that theory,
-including an internal form of $\Sigma$-completeness, and is the closest
-precursor of the present work.  Our setting differs in three ways: the
-object theory is first-order arithmetic in the language
-$0, S, +, \cdot$ rather than a set theory; the provability predicate is
-defined through $\beta$-coded computation tables and must be reasoned
-about by internal table constructions; and the statement covers a whole
-tower of predicates $\Prv_k$ with an explicit numeral-substitution
-formula and a proof of its standard-model meaning.  Popescu and Traytel
+including an internal form of $\Sigma$-completeness.  For arithmetic,
+the Lean~4 library Foundation \cite{Foundation} proves the second
+incompleteness theorem for $\Delta_1$-definable theories extending
+$\mathsf{I}\Sigma_1$, with formalized $\Sigma_1$-completeness, including
+its form for formulas with free variables, and the third derivability
+condition $\mathsf{I}\Sigma_1 \vdash \Box\sigma \to \Box\Box\sigma$.
+Its proofs reason inside an arbitrary model of $\mathsf{I}\Sigma_1$, in
+which syntax and provability are internalized, and pass to derivability
+through the completeness theorem.  The present development is
+proof-theoretic instead: every step is an explicit derivation in the
+Hilbert calculus of $\T0$, carried out on codes denoted by object-level
+variables, with the provability predicate defined through
+$\beta$-coded computation tables.  It also covers a tower of predicates
+$\Prv_k$, states the numeral substitution as an explicit formula whose
+standard-model meaning is proved, and is written in Rocq.  Popescu and
+Traytel
 \cite{PopescuTraytel2019} give an abstract account of the incompleteness
 theorems that takes the derivability conditions as hypotheses and
 instantiate it with Paulson's development.  Kirst and Hermes
@@ -1003,6 +1011,12 @@ G.~Boolos.
 S.~Feferman.
 \newblock Arithmetization of metamathematics in a general setting.
 \newblock \emph{Fundamenta Mathematicae}, 49:35--92, 1960.
+
+\bibitem{Foundation}
+FormalizedFormalLogic.
+\newblock Foundation: formalization of mathematical logic in {L}ean~4.
+\newblock \url{https://github.com/FormalizedFormalLogic/Foundation},
+  2023--2026.
 
 \bibitem{HajekPudlak1993}
 P.~H{\'a}jek and P.~Pudl{\'a}k.
