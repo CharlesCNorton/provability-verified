@@ -45,6 +45,29 @@ derivations and their computation tables.  The paper in `paper/`
 ([PDF](paper/provable-sigma1.pdf)) presents the statements and the
 proof.
 
+## Diagonal lemma and Löb's theorem
+
+For every formula φ in which v₀ is not free, the sentence δ obtained by
+substituting the numeral of the code of ∃w (Sub(v₀, v₀, w) ∧ φ) for v₀
+satisfies, in every T_n,
+
+```
+T_n ⊢ δ ↔ φ(⌜δ⌝)
+```
+
+(`FOPr_diagonal`, `theories/Diagonal.v`).  Here Sub is the same
+numeral-substitution formula, and T_0 proves that it is functional at
+every closed code.  With the second and third derivability conditions
+this gives Löb's theorem inside T_0 for every level k and sentence A,
+
+```
+T_0 ⊢ Pr_k(⌜Pr_k(⌜A⌝) → A⌝) → Pr_k(⌜A⌝)
+```
+
+(`FOLoeb_internal`), and from it Löb's rule for T_k
+(`FOLoeb_rule_derived`).  The tower's calculus still contains Löb's
+rule as a primitive inference.
+
 ## Building
 
 With Rocq 9.0 and its standard library:
@@ -77,7 +100,7 @@ logical name `Provability`.
 | `Patterns.v` | code patterns with slots for numeral codes, and the substitution, occurrence and capture rows of a code |
 | `Instances.v` | provable instances of a pattern with modus ponens, instantiation, existential elimination and case splitting; numeral codes; evaluation, sums, products and disequality inside the provability predicate |
 | `Sigma1.v` | the Δ₀ and Σ₁ inductions, the sentence form, `FOHBL3_internal`, the numeral-substitution formula `FOSUBNUMS` with its derivation, totality and meaning, `provable_sigma1_completeness` |
-| `Diagonal.v` | closed rows of the substitution tables inverted inside T_0: closed pairing, the step clause of a row with a known tag, lookups as rows, the substitution step at a closed binary code |
+| `Diagonal.v` | substitution rows at a closed code are functional inside T_0, closed rows are provable, the diagonal lemma `FOPr_diagonal`, Löb's theorem inside T_0 `FOLoeb_internal`, and Löb's rule from it `FOLoeb_rule_derived` |
 
 ## Origin
 

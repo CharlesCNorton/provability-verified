@@ -42,10 +42,10 @@
                     Sigma_1-completeness with the formalized numeral
                     substitution, its standard-model meaning, and the
                     third derivability condition FOHBL3_internal
-      Diagonal      closed rows of the substitution tables inverted inside
-                    T_0: closed pairing, the step clause of a row with a
-                    known tag, lookups as rows, and the substitution step
-                    at a closed binary code
+      Diagonal      substitution rows at a closed code are functional
+                    inside T_0, closed rows are provable, the diagonal
+                    lemma FOPr_diagonal, and Loeb's theorem inside T_0,
+                    FOLoeb_internal
 
     Requiring [Provability.Provability] loads and imports all twelve. *)
 
