@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 10 of 11. Provable instances, numeral codes, sums and products.   *)
 (*                                                                            *)
@@ -15,8 +15,8 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics ArithInternal ArithTransfer
-  ArithMerge ArithDerivability ArithRows ArithPatterns.
+From Provability Require Import Modal Syntax Semantics Internal Transfer Merge
+  Derivability Rows Patterns.
 Open Scope fo_scope.
 
 (** ** Codes of closed formulas and provability of theorems. *)

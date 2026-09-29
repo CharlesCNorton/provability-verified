@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 6 of 11. Merging two checked derivations and their tables.        *)
 (*                                                                            *)
@@ -15,7 +15,7 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics ArithInternal ArithTransfer.
+From Provability Require Import Modal Syntax Semantics Internal Transfer.
 Open Scope fo_scope.
 
 (** ** Every justification code has a shift. *)

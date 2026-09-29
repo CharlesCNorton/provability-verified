@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 8 of 11. Table rows and one-line derivations inside T_0.          *)
 (*                                                                            *)
@@ -15,8 +15,8 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics ArithInternal ArithTransfer
-  ArithMerge ArithDerivability.
+From Provability Require Import Modal Syntax Semantics Internal Transfer Merge
+  Derivability.
 Open Scope fo_scope.
 
 (** ** Freshness of the pattern and guard facts. *)

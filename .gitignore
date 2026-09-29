@@ -1,4 +1,4 @@
-# Coq build artifacts
+# Rocq build artifacts
 *.vo
 *.vok
 *.vos
@@ -8,7 +8,12 @@
 .lia.cache
 .nia.cache
 
-# coq_makefile bookkeeping
-Makefile.conf
-.Makefile.d
-.coqdeps.d
+# Generated makefile
+CoqMakefile
+CoqMakefile.conf
+.CoqMakefile.d
+
+# LaTeX intermediates
+paper/*.log
+paper/*.out
+paper/*.toc

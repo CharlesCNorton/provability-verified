@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 11 of 11. Provable Sigma_1-completeness and the third condition.  *)
 (*                                                                            *)
@@ -15,8 +15,8 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics ArithInternal ArithTransfer
-  ArithMerge ArithDerivability ArithRows ArithPatterns ArithInstances.
+From Provability Require Import Modal Syntax Semantics Internal Transfer Merge
+  Derivability Rows Patterns Instances.
 Open Scope fo_scope.
 
 (** ** The invariant of the main induction.

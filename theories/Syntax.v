@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 2 of 11. First-order syntax, Goedel coding, the FOProvesTn tower. *)
 (*                                                                            *)
@@ -18,7 +18,7 @@ From Stdlib Require Import Logic.Classical.
 From Stdlib Require Import Logic.ClassicalEpsilon.
 Import ListNotations.
 
-From Provability Require Import Calculus.
+From Provability Require Import Modal.
 
 Inductive FOTerm : Type :=
   | FOVar : nat -> FOTerm

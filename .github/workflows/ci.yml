@@ -29,5 +29,5 @@ jobs:
               make -j 2
             endGroup
             startGroup "Kernel re-validation"
-              rocqchk -silent -Q . Provability Provability.Provability
+              rocqchk -silent -Q theories Provability Provability.Provability
             endGroup

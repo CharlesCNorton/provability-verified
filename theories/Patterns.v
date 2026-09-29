@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 9 of 11. Code patterns and the substitution rows of a code.       *)
 (*                                                                            *)
@@ -15,8 +15,8 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics ArithInternal ArithTransfer
-  ArithMerge ArithDerivability ArithRows.
+From Provability Require Import Modal Syntax Semantics Internal Transfer Merge
+  Derivability Rows.
 Open Scope fo_scope.
 
 (** ** The tables the row constructions extend.

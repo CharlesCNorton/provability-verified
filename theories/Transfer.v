@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 5 of 11. Substitution and transfer through the checker builders.  *)
 (*                                                                            *)
@@ -15,7 +15,7 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics ArithInternal.
+From Provability Require Import Modal Syntax Semantics Internal.
 Open Scope fo_scope.
 
 (** ** Reasoning about folded formulas.

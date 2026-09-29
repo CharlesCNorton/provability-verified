@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 3 of 11. N-satisfaction, the arithmetized checker, HBL, FOembed.  *)
 (*                                                                            *)
@@ -18,7 +18,7 @@ From Stdlib Require Import Logic.Classical.
 From Stdlib Require Import Logic.ClassicalEpsilon.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax.
+From Provability Require Import Modal Syntax.
 
 Lemma FOsat_FOJMP : forall e B cs ds vd pl ipos,
   FOmax_var_tm cs < B -> FOmax_var_tm ds < B ->

@@ -1,6 +1,6 @@
 (******************************************************************************)
 (*                                                                            *)
-(*           Parametric Provability: Bypassing the Loebian Obstacle           *)
+(*                            Provability Verified                            *)
 (*                                                                            *)
 (*     Part 4 of 11. Object-level arithmetic, beta sequences, Cantor pairing. *)
 (*                                                                            *)
@@ -15,7 +15,7 @@ From Stdlib Require Import micromega.Lia.
 From Stdlib Require Import Setoid Morphisms Ring Ring_theory.
 Import ListNotations.
 
-From Provability Require Import Calculus ArithSyntax ArithSemantics.
+From Provability Require Import Modal Syntax Semantics.
 
 (** ** Instantiating derivable open equations.
 

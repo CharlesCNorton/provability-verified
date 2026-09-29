@@ -1,14 +1,14 @@
--Q . Provability
+-Q theories Provability
 
-Calculus.v
-ArithSyntax.v
-ArithSemantics.v
-ArithInternal.v
-ArithTransfer.v
-ArithMerge.v
-ArithDerivability.v
-ArithRows.v
-ArithPatterns.v
-ArithInstances.v
-ArithSigma1.v
-Provability.v
+theories/Modal.v
+theories/Syntax.v
+theories/Semantics.v
+theories/Internal.v
+theories/Transfer.v
+theories/Merge.v
+theories/Derivability.v
+theories/Rows.v
+theories/Patterns.v
+theories/Instances.v
+theories/Sigma1.v
+theories/Provability.v

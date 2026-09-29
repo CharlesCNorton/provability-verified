@@ -467,14 +467,14 @@ soundness of tables and the totality of the chain
               inner sep=4pt, minimum height=2.6em, text width=12.5em},
   arr/.style={-{Stealth[length=2.4mm]}, thick},
   node distance=0.55cm and 0.9cm]
-  \node[box] (rows) {Table rows inside $\T0$;\\ one-line derivations\\ \scriptsize\rocq{ArithRows}};
-  \node[box, right=of rows] (pat) {Code patterns;\\ substitution rows of a code\\ \scriptsize\rocq{ArithPatterns}};
-  \node[box, below=of rows] (pi) {Provable instances:\\ MP, instantiation, theorems\\ \scriptsize\rocq{ArithInstances}};
-  \node[box, right=of pi] (arith) {Numeral codes, evaluation,\\ $+$, $\cdot$, $\neq$ by internal induction\\ \scriptsize\rocq{ArithInstances}};
-  \node[box, below=of pi] (d0) {$\Delta_0$ induction in\\ both polarities\\ \scriptsize\rocq{ArithSigma1}};
-  \node[box, right=of d0] (s1) {$\Sigma_1$ step; sentence form;\\ D3 (\cref{cor:sentence,cor:d3})\\ \scriptsize\rocq{ArithSigma1}};
-  \node[box, below=of d0] (chain) {Substitution chain;\\ free-variable form (\cref{thm:open})\\ \scriptsize\rocq{ArithSigma1}};
-  \node[box, right=of chain] (adeq) {Table soundness, totality;\\ adequacy (\cref{thm:meaning})\\ \scriptsize\rocq{ArithSigma1}};
+  \node[box] (rows) {Table rows inside $\T0$;\\ one-line derivations\\ \scriptsize\rocq{Rows}};
+  \node[box, right=of rows] (pat) {Code patterns;\\ substitution rows of a code\\ \scriptsize\rocq{Patterns}};
+  \node[box, below=of rows] (pi) {Provable instances:\\ MP, instantiation, theorems\\ \scriptsize\rocq{Instances}};
+  \node[box, right=of pi] (arith) {Numeral codes, evaluation,\\ $+$, $\cdot$, $\neq$ by internal induction\\ \scriptsize\rocq{Instances}};
+  \node[box, below=of pi] (d0) {$\Delta_0$ induction in\\ both polarities\\ \scriptsize\rocq{Sigma1}};
+  \node[box, right=of d0] (s1) {$\Sigma_1$ step; sentence form;\\ D3 (\cref{cor:sentence,cor:d3})\\ \scriptsize\rocq{Sigma1}};
+  \node[box, below=of d0] (chain) {Substitution chain;\\ free-variable form (\cref{thm:open})\\ \scriptsize\rocq{Sigma1}};
+  \node[box, right=of chain] (adeq) {Table soundness, totality;\\ adequacy (\cref{thm:meaning})\\ \scriptsize\rocq{Sigma1}};
   \draw[arr] (rows) -- (pat);
   \draw[arr] (rows) -- (pi);
   \draw[arr] (pat) -- (pi);
@@ -847,15 +847,14 @@ truth of $\Prv_k$ at that witness.
 
 \subsection{Files and checking}
 
-The work consists of the last four files of the
-\rocq{provability-verified} development \cite{ProvabilityVerified},
-placed after the files that define the syntax, the semantics, the proof
-checker and the internal second derivability condition
-(\cref{tab:files}).  The whole development is checked by \verb|make|
-followed by
-\verb|rocqchk -silent -Q . Provability Provability.Provability| with
-Rocq~9.0, which is what the repository's continuous integration runs;
-the results of this paper are those of commit \texttt{532267a}.  \verb|Print Assumptions provable_sigma1_completeness| reports the
+The work consists of the last four files in the \rocq{theories}
+directory of the \rocq{provability-verified} development
+\cite{ProvabilityVerified}, placed after the files that define the
+syntax, the semantics, the proof checker and the internal second
+derivability condition (\cref{tab:files}).  With Rocq~9.0,
+\verb|make check| builds the development and re-validates it with
+\verb|rocqchk|, which is what the repository's continuous integration
+runs.  \verb|Print Assumptions provable_sigma1_completeness| reports the
 single axiom \rocq{Classical\_Prop.classic}.
 
 \begin{table}[t]
@@ -864,10 +863,10 @@ single axiom \rocq{Classical\_Prop.classic}.
 \toprule
 File & Lines & Stmts & Time & Content \\
 \midrule
-\rocq{ArithRows} & 2{,}952 & 98 & 987\,s & tables holding given rows, guard rows, one-line derivations, step clauses from component facts \\
-\rocq{ArithPatterns} & 2{,}892 & 84 & 133\,s & patterns of terms and formulas, their totality and uniqueness, substitution, occurrence and capture rows of a code \\
-\rocq{ArithInstances} & 3{,}769 & 146 & 240\,s & provable instances and their calculus, numeral codes, term evaluation, sums, products, disequality \\
-\rocq{ArithSigma1} & 3{,}181 & 107 & 34\,s & $\Delta_0$ and $\Sigma_1$ inductions, sentence form, D3, substitution chain, adequacy, the summary theorem \\
+\rocq{Rows} & 2{,}952 & 98 & 987\,s & tables holding given rows, guard rows, one-line derivations, step clauses from component facts \\
+\rocq{Patterns} & 2{,}892 & 84 & 133\,s & patterns of terms and formulas, their totality and uniqueness, substitution, occurrence and capture rows of a code \\
+\rocq{Instances} & 3{,}769 & 146 & 240\,s & provable instances and their calculus, numeral codes, term evaluation, sums, products, disequality \\
+\rocq{Sigma1} & 3{,}181 & 107 & 34\,s & $\Delta_0$ and $\Sigma_1$ inductions, sentence form, D3, substitution chain, adequacy, the summary theorem \\
 \midrule
 total & 12{,}794 & 435 & 1{,}394\,s & \\
 \bottomrule
@@ -970,7 +969,7 @@ substitution trustworthy without inspecting the tables.  The truth of
 the main theorem's statement still rests on the definitions of the
 object theory, the coding and the $\Sigma_1$ class, which a reader has
 to check against their informal counterparts.  These definitions are
-short and are collected in the file \rocq{ArithSyntax.v}.
+short and are collected in the file \rocq{theories/Syntax.v}.
 
 \section{Conclusion}
 
